@@ -1,0 +1,9 @@
+applications:
+- name: regserv
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  buildpack: java_buildpack
+  services:
+  - config-repo-service
+  stack: cflinuxfs2
